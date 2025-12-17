@@ -1,7 +1,7 @@
 console.log("programming koo hojii jalqeera ");
 let maqaa = "caalaa";
 let umrii = 14;
-let biyyakoo = "ciro";
+let biyyakoo = "chiro";
 console.log("Ani maqaan koo: ", maqaa, "dha", "umriin koo", umrii, "lafan itti dhaladhe", biyyakoo);
 // calculation
 console.log("calculation \n\n");
