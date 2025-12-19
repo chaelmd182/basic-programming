@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FootballVerse • Online Football Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./systel1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo">⚽ FootballVerse</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Matches</a>
+    <a href="#">Follow</a>
+    <a href="#" onclick="showLogin()">Login</a>
+    <a href="#" onclick="showRegister()">Register</a>
+  </nav>
+</header>
+
+<main>
+  <!-- Game Section -->
+  <div class="card">
+    <h2>Football Online Match</h2>
+    <p>Select game mode</p>
+
+    <select id="modeSelect">
+      <option>Person vs Computer</option>
+      <option>Person vs Person</option>
+      <option>More than Two Players</option>
+    </select>
+
+    <div class="field">⚽ Football Field (Game Area)</div>
+  </div>
+
+  <!-- Auth Section -->
+  <div class="card sidebar">
+
+    <!-- Login -->
+    <div id="loginBox">
+      <h3>🔐 Login</h3>
+      <div class="input-box">📧 <input type="text" placeholder="Email or Phone"></div>
+      <div class="input-box">🔒 <input type="password" placeholder="Password"></div>
+      <button>Login</button>
+      <p class="switch">No account? <span onclick="showRegister()">Register</span></p>
+    </div>
+
+    <!-- Register -->
+    <div id="registerBox" style="display:none">
+      <h3>📝 Register</h3>
+      <div class="input-box">👤 <input type="text" placeholder="First Name"></div>
+      <div class="input-box">👤 <input type="text" placeholder="Last Name"></div>
+      <div class="input-box">📧 <input type="text" placeholder="Email or Phone"></div>
+      <div class="input-box">🔒 <input type="password" placeholder="Password"></div>
+      <div class="input-box">🔒 <input type="password" placeholder="Confirm Password"></div>
+      <button>Create Account</button>
+      <p class="switch">Already have an account? <span onclick="showLogin()">Login</span></p>
+    </div>
+
+  </div>
+</main>
+
+<footer>© 2025 FootballVerse • Play Football Online</footer>
+
+<script src="./typescript.js"></script>
+</body>
+</html>
