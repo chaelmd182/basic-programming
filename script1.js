@@ -19,5 +19,9 @@ const waayeekee = document.getElementById('waayeekee')
 updateinfoBtn.addEventListener('click', function () {
     const nameinput = document.getElementById('nameinput') 
     const ageInput = document.getElementById('ageInput')
-    waayeekee.textContent= "maqaa  kee " + nameinput.value + " umree kee ammoo " + ageInput.value + " dha!"
+    if (nameinput.value) {
+    waayeekee.textContent="maqaan kee " + nameinput.value + " umrii kee ammo " + ageInput.value + " dha"
+    } else {
+        waayeekee.textContent="please enter your name and age"
+    }
   })
